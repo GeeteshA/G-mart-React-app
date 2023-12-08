@@ -1,0 +1,116 @@
+.banner_2{
+    background-image: url('../Assets/main/minimalist-business-card-copy-space.jpg');
+    background-size: cover;
+    background-position: top 60% right 0;
+    margin: 0 0;
+    padding: 0 80px;
+    padding-top: 3%;
+    flex-direction: column ;
+    align-items: center;
+    justify-items: center;
+}
+.banner_1 img{
+    display: flex;
+    background-size: cover;
+
+}
+.txt_1{
+    margin-left: 43%;
+    padding-bottom: 3%;
+    align-items: end ;
+}
+.txt_1 p{
+    margin-left: 3%;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #fff;
+}
+.txt_1 h2{
+    size: 20x;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-details .details{
+    width: 40%;
+}
+.contact-details .details span,
+.form-details form span{
+    font-size: 16px;
+}
+
+.form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+.contact-details .details h2,
+.form-details form h2{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+.contact-details .details h3{
+    font-size: 16px;
+    
+    padding-bottom: 15px;
+}
+.contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+.contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+.contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+.map{
+    width: 55%;
+    height: 400px;
+}
+/* Form-------------------------------- */
+.form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-details form input,
+.form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+.form-details button:hover{
+    background-color: #088178;
+    color: #fff;
+}
+
+  /* Global Button----------------------------- */
+button.normal{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 25px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 3px solid #e1e1e1;
+    outline: none;
+    transition: 0.02s;
+}

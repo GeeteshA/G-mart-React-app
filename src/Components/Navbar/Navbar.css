@@ -1,0 +1,148 @@
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0,06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header img{
+    max-height: 110px;
+    width: auto;
+    align-items: start;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 00.3s ease;
+}
+#navbar li hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #088178;
+}
+
+#navbar li:hover,
+#navbar li.active{
+    color: #088178;
+}
+#navbar li.active::after,
+#navbar li:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#login-cart{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+ #login-cart button{ 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #1a1a1a;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #088178;
+    outline: none;
+    transition: 00.3s ease;
+}
+
+#login-cart button:hover{
+    background: #088178;
+    border: 1px solid #088178;
+}
+#nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: #088178;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      display: flex;
+      
+        }
+    .header{
+        width: auto;
+        overflow: auto;
+        margin: auto;
+        padding: auto;
+  }
+    .navbar{
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 799px){
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: auto;
+        margin: auto;
+    }
+    .header img{
+        width: 5%;
+    }
+    .navbar li{
+        padding: 0 0 0;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0px;
+    } 
+    .login-cart{
+        display: flex;
+
+    }
+}
+@media screen and (min-width: 893px){
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+}
